@@ -32,6 +32,22 @@
         font-weight: bold;
     }
 
+    .container2 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .titulo {
+        text-align: center;
+        padding-top: 25px;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+    select {
+        overflow: auto;
+    }
+
     .conta1 {
         float: left;
         padding: 10px;
@@ -71,6 +87,13 @@
         padding-right: 5.5px;
     }
 
+    .home {
+        display: block;
+    }
+
+    #p1 {
+        display: block;
+    }
 </style>
 
 <header>
@@ -80,68 +103,171 @@
 </header>
 
 <body>
-    <div class="conta1">
-        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CONTABILIZAÇÃO AUTOMÁTICA DAS
-            FATURAS DA FISA </p>
-        <p> <b>PRAZO ESTIMADO</b>: T3 </p>
-        <p> <b>PRAZO ATUAL</b>: T4 </p>
-        <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
-        <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22779/">
-                Clique aqui</a></p>
-        <p> <b>STATUS</b>: EM ANDAMENTO </p>
-        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    <div class="titulo">Estratégico?</div>
+    <div class="container2">
+        <select id="myselection" onchange="showDiv(this)">
+            <div class="select-items">
+                <option value="3">Selecione</option>
+                <option value="1">Sim</option>
+                <option value="2">Não</option>
+            </div>
+        </select>
     </div>
 
-    <div class="conta1">
-        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> REFORMULAÇÃO DE RELATÓRIOS JURÍDICOS
-        </p>
-        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-        <p> <b>PRAZO ATUAL</b>: T4 </p>
-        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-        <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22853/">
-                Clique aqui</a></p>
-        <p> <b>STATUS</b>: EM ANDAMENTO </p>
-        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    <div id="p1">
+        <div class="conta1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CONTABILIZAÇÃO AUTOMÁTICA DAS
+                FATURAS DA FISA </p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22779/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="conta1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> REFORMULAÇÃO DE RELATÓRIOS JURÍDICOS
+            </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22853/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="conta1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> INCLUSÃO DOS GASTOS DOS CARTÕES
+                CORPORATIVOS</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22787/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="conta1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> FISA: FALHA PROCESSO ADMINISTRATIVO
+                E COMERCIAL</p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22917/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: POUCA EVOLUÇÃO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="conta1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">ELIMINAR CRÍTICAS DO SAG</p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22909/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
     </div>
 
-    <div class="conta1">
-        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> INCLUSÃO DOS GASTOS DOS CARTÕES
-            CORPORATIVOS</p>
-        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-        <p> <b>PRAZO ATUAL</b>: T4 </p>
-        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-        <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22787/">
-                Clique aqui</a></p>
-        <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
-        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    <div id="show1" class="texto">
+
     </div>
 
-    <div class="conta1">
-        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> FISA: FALHA PROCESSO ADMINISTRATIVO
-            E COMERCIAL</p>
-        <p> <b>PRAZO ESTIMADO</b>: T3 </p>
-        <p> <b>PRAZO ATUAL</b>: T4 </p>
-        <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
-        <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22917/">
-                Clique aqui</a></p>
-        <p> <b>STATUS</b>: POUCA EVOLUÇÃO </p>
-        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    <div id="show2" class="texto">
+        <div class="conta1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CONTABILIZAÇÃO AUTOMÁTICA DAS
+                FATURAS DA FISA </p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22779/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="conta1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> REFORMULAÇÃO DE RELATÓRIOS JURÍDICOS
+            </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22853/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="conta1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> INCLUSÃO DOS GASTOS DOS CARTÕES
+                CORPORATIVOS</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22787/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="conta1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> FISA: FALHA PROCESSO ADMINISTRATIVO
+                E COMERCIAL</p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22917/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: POUCA EVOLUÇÃO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="conta1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">ELIMINAR CRÍTICAS DO SAG</p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22909/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
     </div>
 
-    <div class="conta1">
-        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">ELIMINAR CRÍTICAS DO SAG</p>
-        <p> <b>PRAZO ESTIMADO</b>: T3 </p>
-        <p> <b>PRAZO ATUAL</b>: T4 </p>
-        <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
-        <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/543/tasks/task/view/22909/">
-                Clique aqui</a></p>
-        <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
-        <p> <b>ESTRATÉGICO</b>: NÃO </p>
-    </div>
-    
+    <script>
+        function showDiv(select) {
+            if (select.value == '1') {
+                document.getElementById('show2').style.display = "none";
+                document.getElementById('show1').style.display = "none";
+                document.getElementById('p1').style.display = "none";
+            }
+            else if (select.value == '2') {
+                document.getElementById('show1').style.display = "none";
+                document.getElementById('show2').style.display = "block";
+                document.getElementById('p1').style.display = "none"
+            }
+
+            else if (select.value == '3') {
+                document.getElementById('show1').style.display = "block"
+                document.getElementById('show2').style.display = "block"
+            }
+        }
+    </script>
 </body>
+</html>
