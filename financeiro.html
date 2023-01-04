@@ -32,6 +32,22 @@
         font-weight: bold;
     }
 
+    .container2 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .titulo {
+        text-align: center;
+        padding-top: 25px;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+    select {
+        overflow: auto;
+    }
+
     .finan1 {
         float: left;
         padding: 10px;
@@ -70,6 +86,14 @@
         border-radius: 3px;
         padding-right: 5.5px;
     }
+
+    .home {
+        display: block;
+    }
+
+    #p1 {
+        display: block;
+    }
 </style>
 
 <header>
@@ -79,66 +103,165 @@
 </header>
 
 <body>
-    <div class="finan1">
-        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">REESTRUTURAÇÃO DO DEPARTAMENTO
-            FINANCEIRO</p>
-        <p> <b>PRAZO ESTIMADO</b>: T1 </p>
-        <p> <b>PRAZO ATUAL</b>: T4 </p>
-        <p> <b>ALTERAÇÕES DE PRAZO</b>: 3 </p>
-        <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22887/">
-                Clique aqui</a></p>
-        <p> <b>STATUS</b>: EM ANDAMENTO </p>
-        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    <div class="titulo">Estratégico?</div>
+    <div class="container2">
+        <select id="myselection" onchange="showDiv(this)">
+            <div class="select-items">
+                <option value="3">Selecione</option>
+                <option value="1">Sim</option>
+                <option value="2">Não</option>
+            </div>
+        </select>
     </div>
 
-    <div class="finan1">
-        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">OPERADOR DE CARTÃO</p>
-        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-        <p> <b>PRAZO ATUAL</b>: T4 </p>
-        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-        <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22555/">
-                Clique aqui</a></p>
-        <p> <b>STATUS</b>: EM ANDAMENTO </p>
-        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    <div id="p1">
+        <div class="finan1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">REESTRUTURAÇÃO DO DEPARTAMENTO
+                FINANCEIRO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T1 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 3 </p>
+            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22887/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="finan1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">OPERADOR DE CARTÃO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22555/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="finan1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DETALHAMENTO DE PROCESSO PARA RPA</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/4162/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="finan1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">SISTEMA DE CONTROLE DE REEMBOLSO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22893/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="finan1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MELHOR TRATAMENTO PARA OCORRENCIAS NA
+                BAIXA DO RETORNO ELETRÔNICO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22897/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
     </div>
 
-    <div class="finan1">
-        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DETALHAMENTO DE PROCESSO PARA RPA</p>
-        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-        <p> <b>PRAZO ATUAL</b>: T4 </p>
-        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-        <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/4162/">
-                Clique aqui</a></p>
-        <p> <b>STATUS</b>: EM ANDAMENTO </p>
-        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    <div id="show1" class="texto">
+        <div class="finan1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MELHOR TRATAMENTO PARA OCORRENCIAS NA
+                BAIXA DO RETORNO ELETRÔNICO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22897/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
     </div>
 
-    <div class="finan1">
-        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">SISTEMA DE CONTROLE DE REEMBOLSO</p>
-        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-        <p> <b>PRAZO ATUAL</b>: T4 </p>
-        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-        <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22893/">
-                Clique aqui</a></p>
-        <p> <b>STATUS</b>: EM ANDAMENTO </p>
-        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    <div id="show2" class="texto">
+        <div class="finan1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">REESTRUTURAÇÃO DO DEPARTAMENTO
+                FINANCEIRO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T1 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 3 </p>
+            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22887/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="finan1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">OPERADOR DE CARTÃO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22555/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="finan1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DETALHAMENTO DE PROCESSO PARA RPA</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/4162/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="finan1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">SISTEMA DE CONTROLE DE REEMBOLSO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22893/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
     </div>
 
-    <div class="finan1">
-        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MELHOR TRATAMENTO PARA OCORRENCIAS NA
-            BAIXA DO RETORNO ELETRÔNICO</p>
-        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-        <p> <b>PRAZO ATUAL</b>: T4 </p>
-        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-        <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22897/">
-                Clique aqui</a></p>
-        <p> <b>STATUS</b>: EM ANDAMENTO </p>
-        <p> <b>ESTRATÉGICO</b>: SIM </p>
-    </div>
-    
+    <script>
+        function showDiv(select) {
+            if (select.value == '1') {
+                document.getElementById('show2').style.display = "none";
+                document.getElementById('show1').style.display = "block";
+                document.getElementById('p1').style.display = "none";
+            }
+            else if (select.value == '2') {
+                document.getElementById('show1').style.display = "none";
+                document.getElementById('show2').style.display = "block";
+                document.getElementById('p1').style.display = "none"
+            }
+
+            else if (select.value == '3') {
+                document.getElementById('show1').style.display = "block"
+                document.getElementById('show2').style.display = "block"
+            }
+        }
+    </script>
 </body>
+</html>
