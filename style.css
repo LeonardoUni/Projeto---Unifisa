@@ -25,10 +25,19 @@
     font-weight: bold;
 }
 
-.container2 {
-    text-align: center;
-    padding: 20px;
+.container1 {
+
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+     
 }
+
+#myselection2{
+    margin-left: 55px;
+}
+
+
 
 select {
     width: 300px;
@@ -55,9 +64,7 @@ select:-ms-expand {
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
 
-.texto {
-    display: none;
-}
+
 
 /* ----------------------- Tarefa 1 - Administração de Grupos ------------------------------------------------------------------*/
 
