@@ -87,13 +87,6 @@
         padding-right: 5.5px;
     }
 
-    .home {
-        display: block;
-    }
-
-    #p1 {
-        display: block;
-    }
 </style>
 
 <header>
@@ -114,73 +107,7 @@
         </select>
     </div>
 
-    <div id="p1">
-        <div class="control1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAÇÃO DE INDICATIVOS NO POWER BI E
-                COMPARTILHAMENTO ATRAVÉS DO EMBEDDED (HTML)</p>
-            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
-            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/8642/tasks/task/view/21941/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: EM ANDAMENTO </p>
-            <p> <b>ESTRATÉGICO</b>: SIM </p>
-        </div>
-
-        <div class="control1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> LEVANTAMENTO DE EFETIVIDADE DAS
-                TAREFAS E ATIVIDADES DOS DEPTOS DA EMPRESA</p>
-            <p> <b>PRAZO ESTIMADO</b>: T4 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 0 </p>
-            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/8642/tasks/task/view/21943/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
-            <p> <b>ESTRATÉGICO</b>: SIM </p>
-        </div>
-
-        <div class="control1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> SISTEMA AUTOMATIZADO PARA
-                ACOMPANHAMENTO BASE DE DADOS PARA PLD</p>
-            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/8642/tasks/task/view/21945/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: POUCA EVOLUÇÃO </p>
-            <p> <b>ESTRATÉGICO</b>: NÃO </p>
-        </div>
-
-        <div class="control1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> APROVAÇÃO PRÉVIA PARA CONTRATAÇÃO DE
-                PRODUTOS/SERVIÇOS</p>
-            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/8642/tasks/task/view/21927/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
-            <p> <b>ESTRATÉGICO</b>: NÃO </p>
-        </div>
-
-        <div class="control1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> ANÁLISE DE CONTRATOS DE SERVIÇOS</p>
-            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
-            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/8642/tasks/task/view/21927/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: PAUSADA </p>
-            <p> <b>ESTRATÉGICO</b>: NÃO </p>
-        </div>
-    </div>
-
-    <div id="show1" class="texto">
+    <div id="sim" class="texto">
         <div class="control1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAÇÃO DE INDICATIVOS NO POWER BI E
                 COMPARTILHAMENTO ATRAVÉS DO EMBEDDED (HTML)</p>
@@ -208,7 +135,7 @@
         </div>
     </div>
 
-    <div id="show2" class="texto">
+    <div id="nao" class="texto">
         <div class="control1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> SISTEMA AUTOMATIZADO PARA
                 ACOMPANHAMENTO BASE DE DADOS PARA PLD</p>
@@ -251,19 +178,19 @@
     <script>
         function showDiv(select) {
             if (select.value == '1') {
-                document.getElementById('show2').style.display = "none";
-                document.getElementById('show1').style.display = "block";
-                document.getElementById('p1').style.display = "none";
+                document.getElementById('nao').style.display = "none";
+                document.getElementById('sim').style.display = "block";
+                
             }
             else if (select.value == '2') {
-                document.getElementById('show1').style.display = "none";
-                document.getElementById('show2').style.display = "block";
-                document.getElementById('p1').style.display = "none"
+                document.getElementById('sim').style.display = "none";
+                document.getElementById('nao').style.display = "block";
+               
             }
 
             else if (select.value == '3') {
-                document.getElementById('show1').style.display = "block"
-                document.getElementById('show2').style.display = "block"
+                document.getElementById('sim').style.display = "block"
+                document.getElementById('nao').style.display = "block"
             }
         }
     </script>
