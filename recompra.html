@@ -86,14 +86,6 @@
         border-radius: 3px;
         padding-right: 5.5px;
     }
-
-    .home {
-        display: block;
-    }
-
-    #p1 {
-        display: block;
-    }
 </style>
 
 <header>
@@ -114,35 +106,7 @@
         </select>
     </div>
 
-    <div id="p1">
-        <div class="rec1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> PONTUAÇÃO DE MONITORIA DO
-                DEPARTAMENTO DE RECOMPRA</p>
-            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
-            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/595/tasks/task/view/21749/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: EM ANDAMENTO </p>
-            <p> <b>ESTRATÉGICO</b>: SIM </p>
-        </div>
-
-        <div class="rec1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAÇÃO PARA ALTERAÇÃO NAS COTAS DE
-                CÓDIGOS ESPECÍFICOS DE SITUAÇÃO DE COBRANÇA (NEWCON)</p>
-            <p> <b>PRAZO ESTIMADO</b>: T1 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 3 </p>
-            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/595/tasks/task/view/21765/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: EM ANDAMENTO </p>
-            <p> <b>ESTRATÉGICO</b>: NÃO </p>
-        </div>
-    </div>
-
-    <div id="show1" class="texto">
+    <div id="sim" class="texto">
         <div class="rec1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> PONTUAÇÃO DE MONITORIA DO
                 DEPARTAMENTO DE RECOMPRA</p>
@@ -157,7 +121,7 @@
         </div>
     </div>
 
-    <div id="show2" class="texto">
+    <div id="nao" class="texto">
         <div class="rec1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAÇÃO PARA ALTERAÇÃO NAS COTAS DE
                 CÓDIGOS ESPECÍFICOS DE SITUAÇÃO DE COBRANÇA (NEWCON)</p>
@@ -175,19 +139,19 @@
     <script>
         function showDiv(select) {
             if (select.value == '1') {
-                document.getElementById('show2').style.display = "none";
-                document.getElementById('show1').style.display = "block";
-                document.getElementById('p1').style.display = "none";
+                document.getElementById('nao').style.display = "none";
+                document.getElementById('sim').style.display = "block";
+               
             }
             else if (select.value == '2') {
-                document.getElementById('show1').style.display = "none";
-                document.getElementById('show2').style.display = "block";
-                document.getElementById('p1').style.display = "none"
+                document.getElementById('sim').style.display = "none";
+                document.getElementById('nao').style.display = "block";
+                
             }
 
             else if (select.value == '3') {
-                document.getElementById('show1').style.display = "block"
-                document.getElementById('show2').style.display = "block"
+                document.getElementById('sim').style.display = "block"
+                document.getElementById('nao').style.display = "block"
             }
         }
     </script>
