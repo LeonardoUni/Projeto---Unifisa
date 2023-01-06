@@ -86,14 +86,6 @@
         border-radius: 3px;
         padding-right: 5.5px;
     }
-
-    .home {
-        display: block;
-    }
-
-    #p1 {
-        display: block;
-    }
 </style>
 
 <header>
@@ -114,19 +106,8 @@
         </select>
     </div>
 
-    <div id="p1">
-        <div class="ouv1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> TRANSCRIÇÃO DE ÁUDIO</p>
-            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
-            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/647/tasks/task/view/22213/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
-            <p> <b>ESTRATÉGICO</b>: NÃO </p>
-        </div>
-
+    
+    <div id="sim" class="texto">
         <div class="ouv1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAÇÃO DO SETOR DE QUALIDADE</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -152,33 +133,7 @@
         </div>
     </div>
 
-    <div id="show1" class="texto">
-        <div class="ouv1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAÇÃO DO SETOR DE QUALIDADE</p>
-            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 0 </p>
-            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/647/tasks/task/view/22217/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
-            <p> <b>ESTRATÉGICO</b>: SIM </p>
-        </div>
-
-        <div class="ouv1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> DIVISÃO DE TAREFAS </p>
-            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
-            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/647/tasks/task/view/22221/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
-            <p> <b>ESTRATÉGICO</b>: SIM </p>
-        </div>
-    </div>
-
-    <div id="show2" class="texto">
+    <div id="nao" class="texto">
         <div class="ouv1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> TRANSCRIÇÃO DE ÁUDIO</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -195,19 +150,19 @@
     <script>
         function showDiv(select) {
             if (select.value == '1') {
-                document.getElementById('show2').style.display = "none";
-                document.getElementById('show1').style.display = "block";
-                document.getElementById('p1').style.display = "none";
+                document.getElementById('nao').style.display = "none";
+                document.getElementById('sim').style.display = "block";
+                
             }
             else if (select.value == '2') {
-                document.getElementById('show1').style.display = "none";
-                document.getElementById('show2').style.display = "block";
-                document.getElementById('p1').style.display = "none"
+                document.getElementById('sim').style.display = "none";
+                document.getElementById('nao').style.display = "block";
+                
             }
 
             else if (select.value == '3') {
-                document.getElementById('show1').style.display = "block"
-                document.getElementById('show2').style.display = "block"
+                document.getElementById('sim').style.display = "block"
+                document.getElementById('nao').style.display = "block"
             }
         }
     </script>
