@@ -8,7 +8,6 @@
     <title>Atendimento ao Cliente</title>
     <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icone.png">
 </head>
 
 <style>
@@ -30,10 +29,6 @@
         display: flexbox;
         font-size: 30pt;
         font-weight: bold;
-    }
-
-    .texto {
-        display: none;
     }
 
     .titulo {
@@ -85,10 +80,6 @@
         border-radius: 3px;
         padding-right: 5.5px;
     }
-    
-    #p1 {
-        display: block;
-    }
 </style>
 
 <header>
@@ -109,60 +100,7 @@
         </select>
     </div>
 
-    <div id="p1">
-        <div class="atd1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> DESENVOLVIMENTO DE PESQUISA DE
-                SATISFAÇÃO E PESQUISA NPS</p>
-            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/575/tasks/task/view/21443/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: EM ANDAMENTO </p>
-            <p> <b>ESTRATÉGICO</b>: SIM </p>
-        </div>
-
-        <div class="atd1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> APLICAÇÃO DE MELHORIAS NAS MÉTRICAS
-                DE MONITORAMENTO - CENTRAL DE RELACIONAMENTO</p>
-            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
-            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/575/tasks/task/view/21467/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: EM ANDAMENTO </p>
-            <p> <b>ESTRATÉGICO</b>: SIM </p>
-        </div>
-
-        <div class="atd1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> IMPLANTAÇÃO TAKE</p>
-            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
-            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/575/tasks/task/view/21615/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: EM ANDAMENTO </p>
-            <p> <b>ESTRATÉGICO</b>: NÃO </p>
-        </div>
-
-        <div class="atd1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> ESPECIALIZAÇÃO DE PROCESSOS DE
-                OUTRAS ÁREAS</p>
-            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-            <p> <b>LINK DO BITRIX</b>:<a id="ancora" target="_blank"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/575/tasks/task/view/21525/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: EM ANDAMENTO </p>
-            <p> <b>ESTRATÉGICO</b>: NÃO </p>
-        </div>
-    </div>
-
-    <div id="show1" class="texto">
+    <div id="sim" class="texto">
         <div class="atd1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> DESENVOLVIMENTO DE PESQUISA DE
                 SATISFAÇÃO E PESQUISA NPS</p>
@@ -191,7 +129,7 @@
     </div>
 
 
-    <div id="show2" class="texto">
+    <div id="nao" class="texto">
         <div class="atd1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> IMPLANTAÇÃO TAKE</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -216,25 +154,24 @@
             <p> <b>STATUS</b>: EM ANDAMENTO </p>
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
-
     </div>
     
     <script>
       function showDiv(select) {
             if (select.value == '1') {
-                document.getElementById('show2').style.display = "none";
-                document.getElementById('show1').style.display = "block";
-                document.getElementById('p1').style.display = "none"
+                document.getElementById('nao').style.display = "none";
+                document.getElementById('sim').style.display = "block";
+                
             }
             else if (select.value == '2') {
-                document.getElementById('show1').style.display = "none";
-                document.getElementById('show2').style.display = "block"
-                document.getElementById('p1').style.display = "none";
+                document.getElementById('sim').style.display = "none";
+                document.getElementById('nao').style.display = "block";
+               
             }
 
             else if (select.value == '3') {
-                document.getElementById('show1').style.display = "block"
-                document.getElementById('show2').style.display = "block"
+                document.getElementById('sim').style.display = "block"
+                document.getElementById('nao').style.display = "block"
             }
         }
     </script>
