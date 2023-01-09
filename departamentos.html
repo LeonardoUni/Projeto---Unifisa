@@ -8,7 +8,6 @@
     <title>Departamentos Unifisa</title>
     <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icone.png">
 </head>
 <header>
     <div class="container">
@@ -17,77 +16,95 @@
 </header>
 
 <body>
-    <div class="container2">
-        <select id="myselection">
-            <div class="select-items">
-                <option>Selecione um Departamento</option>
-                <option value="1">Administração de Grupos</option>
-                <option value="2">Atendimento ao Cliente</option>
-                <option value="3">Cobrança</option>
-                <option value="4">Contabilidade</option>
-                <option value="5">Controladoria</option>
-                <option value="6">Crédito - Bens Móveis e Serviços</option>
-                <option value="7">Crédito - Imóveis</option>
-                <option value="8">Facilities</option>
-                <option value="9">Financeiro</option>
-                <option value="10">Jurídico</option>
-                <option value="11">Monitoria e Treinamento</option>
-                <option value="12">Ouvidoria</option>
-                <option value="13">Reativação</option>
-                <option value="14">Recompra</option>
-                <option value="15">Recursos Humanos</option>
-                <option value="16">Sucesso do cliente</option>
-                <option value="17">Tecnologia da Informação</option>
-            </div>
-        </select>
+    <div class="container1">
+
+        <div class="departamentos">
+            Departamentos
+            <select id="myselection" onchange="mudar()">
+                <div class="select-items">
+                    <option value="0">Selecione um Departamento</option>
+                    <option value="1">Administração de Grupos</option>
+                    <option value="2">Atendimento ao Cliente</option>
+                    <option value="3">Cobrança</option>
+                    <option value="4">Contabilidade</option>
+                    <option value="5">Controladoria</option>
+                    <option value="6">Crédito - Bens Móveis e Serviços</option>
+                    <option value="7">Crédito - Imóveis</option>
+                    <option value="8">Facilities</option>
+                    <option value="9">Financeiro</option>
+                    <option value="10">Jurídico</option>
+                    <option value="11">Monitoria e Treinamento</option>
+                    <option value="12">Ouvidoria</option>
+                    <option value="13">Reativação</option>
+                    <option value="14">Recompra</option>
+                    <option value="15">Recursos Humanos</option>
+                    <option value="16">Sucesso do cliente</option>
+                    <option value="17">Tecnologia da Informação</option>
+                </div>
+            </select>
+        </div>
+
+        <div class="estrategico">
+            <b style="margin-left: 15px; padding: 20px;">Estratégico</b>
+            <select id="myselection2" onchange="mudar()">
+                <div class="select-items">
+                    <option>Selecione</option>
+                    <option value="18">Sim</option>
+                    <option value="19">Não</option>
+                    <option value="20">Aguardando Posiconamento</option>
+                </div>
+            </select>
+        </div>
+
     </div>
 
     <!--ADM de Grupos-->
-    <div id="show1" class="texto">
-        <div id="adm1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CANCELAMENTO AUTOMÁTICO DE PROPOSTA
-            </p>
-            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/527/tasks/task/view/21775/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: EM ANDAMENTO </p>
-            <p> <b>ESTRATÉGICO</b>: NÃO </p>
-        </div>
 
-        <div id="adm1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> INTEGRAÇÃO DA ASSINATURA DO
-                CONSORCIADO COM A PROPOSTA DE ADESÃO - VENDA PELO MOBILE</p>
-            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
-                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/527/tasks/task/view/21777/">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: EM ANDAMENTO </p>
-            <p> <b>ESTRATÉGICO</b>: NÃO </p>
-
-        </div>
-
-        <div id="adm1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> AUTOMAÇÃO NA DEVOLUÇÃO DE VALORES
-                AOS CONSORCIADOS</p>
-            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
-            <p> <b>PRAZO ATUAL</b>: T4 </p>
-            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
-            <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora" href="https://consorciounifisa.bitrix24.com.br/company/personal/user/527/tasks/task/view/21791/
-                    ">
-                    Clique aqui</a></p>
-            <p> <b>STATUS</b>: EM ANDAMENTO </p>
-            <p> <b>ESTRATÉGICO</b>: SIM </p>
-        </div>
+    <div class="adm1" id="simadm">
+        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> AUTOMAÇÃO NA DEVOLUÇÃO DE VALORES
+            AOS CONSORCIADOS</p>
+        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+        <p> <b>PRAZO ATUAL</b>: T4 </p>
+        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+        <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora" href="https://consorciounifisa.bitrix24.com.br/company/personal/user/527/tasks/task/view/21791/
+                ">
+                Clique aqui</a></p>
+        <p> <b>STATUS</b>: EM ANDAMENTO </p>
+        <p> <b>ESTRATÉGICO</b>: SIM </p>
     </div>
+
+    <div class="adm1" id="naoadm1">
+        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CANCELAMENTO AUTOMÁTICO DE PROPOSTA
+        </p>
+        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+        <p> <b>PRAZO ATUAL</b>: T4 </p>
+        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+        <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/527/tasks/task/view/21775/">
+                Clique aqui</a></p>
+        <p> <b>STATUS</b>: EM ANDAMENTO </p>
+        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    </div>
+
+    <div class="adm1" id="naoadm2">
+        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> INTEGRAÇÃO DA ASSINATURA DO
+            CONSORCIADO COM A PROPOSTA DE ADESÃO - VENDA PELO MOBILE</p>
+        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+        <p> <b>PRAZO ATUAL</b>: T4 </p>
+        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+        <p> <b>LINK DO BITRIX</b>:<a target="_blank" id="ancora"
+                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/527/tasks/task/view/21777/">
+                Clique aqui</a></p>
+        <p> <b>STATUS</b>: EM ANDAMENTO </p>
+        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+
+    </div>
+
+
 
     <!--Atendimento ao Cliente-->
     <div id="show2" class="texto">
-        <div id="atd1">
+        <div class="atd1" id="simatd1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> DESENVOLVIMENTO DE PESQUISA DE
                 SATISFAÇÃO E PESQUISA NPS</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -100,7 +117,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="atd1">
+        <div class="atd1" id="simatd2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> APLICAÇÃO DE MELHORIAS NAS MÉTRICAS
                 DE MONITORAMENTO - CENTRAL DE RELACIONAMENTO</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -113,7 +130,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="atd1">
+        <div class="atd1" id="naoatd1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> IMPLANTAÇÃO TAKE</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -125,7 +142,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="atd1">
+        <div class="atd1" id="naoatd2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> ESPECIALIZAÇÃO DE PROCESSOS DE
                 OUTRAS ÁREAS</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -143,7 +160,7 @@
     <div id="show3" class="texto">
 
 
-        <div id="cbr1">
+        <div class="cbr1" id="naocbr1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> MELHORIAS 2ª VIA DE BOLETO PELO
                 NEWCON - ENVIO AUTOMÁTICO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -156,7 +173,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="cbr1">
+        <div class="cbr1" id="simcbr1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> BAIXA AUTOMÁTICA DE PAGAMENTOS NO
                 BITRIX</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -169,7 +186,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="cbr1">
+        <div class="cbr1" id="naocbr2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> RETORNO SMS POR CONSORCIADOS -
                 INTEGRAR PLATAFORMA MESSAGE CENTER AO WHATSAPP/MOVIDESK</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -184,7 +201,7 @@
 
 
 
-        <div id="cbr1">
+        <div class="cbr1" id="naocbr3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> ABONO DE MULTAS / JUROS</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -196,7 +213,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="cbr1">
+        <div class="cbr1" id="simcbr2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> PROCESSOS AUTOMATIZADOS NEWCON</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -212,7 +229,7 @@
 
     <!--Contabilidade-->
     <div id="show4" class="texto">
-        <div id="conta1">
+        <div class="conta1" id="naoconta1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CONTABILIZAÇÃO AUTOMÁTICA DAS
                 FATURAS DA FISA </p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -225,7 +242,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="conta1">
+        <div class="conta1" id="naoconta2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> REFORMULAÇÃO DE RELATÓRIOS JURÍDICOS
             </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -238,7 +255,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="conta1">
+        <div class="conta1" id="naoconta3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> INCLUSÃO DOS GASTOS DOS CARTÕES
                 CORPORATIVOS</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -251,7 +268,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="conta1">
+        <div class="conta1" id="naoconta4">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> FISA: FALHA PROCESSO ADMINISTRATIVO
                 E COMERCIAL</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -264,7 +281,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="conta1">
+        <div class="conta1" id="naoconta5">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">ELIMINAR CRÍTICAS DO SAG</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -280,7 +297,7 @@
 
     <!--Controladoria-->
     <div id="show5" class="texto">
-        <div id="control1">
+        <div class="control1" id="simcontrol1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAÇÃO DE INDICATIVOS NO POWER BI E
                 COMPARTILHAMENTO ATRAVÉS DO EMBEDDED (HTML)</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -293,7 +310,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="control1">
+        <div class="control1" id="simcontrol2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> LEVANTAMENTO DE EFETIVIDADE DAS
                 TAREFAS E ATIVIDADES DOS DEPTOS DA EMPRESA</p>
             <p> <b>PRAZO ESTIMADO</b>: T4 </p>
@@ -306,7 +323,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="control1">
+        <div class="control1" id="naocontrol1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> SISTEMA AUTOMATIZADO PARA
                 ACOMPANHAMENTO BASE DE DADOS PARA PLD</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -319,7 +336,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="control1">
+        <div class="control1" id="naocontrol2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> APROVAÇÃO PRÉVIA PARA CONTRATAÇÃO DE
                 PRODUTOS/SERVIÇOS</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -332,7 +349,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="control1">
+        <div class="control1" id="naocontrol3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> ANÁLISE DE CONTRATOS DE SERVIÇOS</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -347,7 +364,7 @@
 
     <!--Crédito Bens-Móveis e Serviços-->
     <div id="show6" class="texto">
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">TRANSFERÊNCIA DE COTA COM BEM
                 ENTREGUE</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -360,7 +377,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CONTRATAR EMPRESA PARA GESTÃO E
                 PROCESSO DE CREDENCIAMENTO ANUAL NOS DETRANS </p>
             <p> <b>PRAZO ESTIMADO</b>: T1 </p>
@@ -373,7 +390,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">BAIXA DE GRAVAME AUTOMÁTICA APÓS
                 QUITAÇÃO DA COTA </p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -386,7 +403,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens4">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PROJ - CRIAÇÃO DA POLÍTICA DE CRÉDITO
             </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -399,7 +416,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens5">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MAPA DE SINISTRO (BITRIX) </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -411,7 +428,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens6">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">REVISÃO DOS DOCUMENTOS DA FASE
                 "ANÁLISE DE CRÉDITO 103" </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -424,7 +441,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="simbens1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PAINEL DE DECISÃO DO CRÉDITO </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -436,9 +453,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        
-
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens7">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">INFORMAR STATUS DO PROCESSO
                 CONTEMPLADO </p>
             <p> <b>PRAZO ESTIMADO</b>: AGUARDANDO POSICIONAMENTO </p>
@@ -451,7 +466,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens8">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">LANÇAR NA AGENDA NEWCON TICKETS
                 MOVIDESK </p>
             <p> <b>PRAZO ESTIMADO</b>: T4 </p>
@@ -464,7 +479,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="simbens2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">SISTEMA/AUTOMAÇÃO - RECEBIMENTO DE
                 DOCUMENTOS DE CADASTRO </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -477,7 +492,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens9">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DISPONIBILIZAÇÃO DOS COMPROVANTES DE
                 PAGAMENTO </p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -490,7 +505,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="naobens1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MENSAGEM AUTOMÁTICA OFERECENDO LB
                 (LIBERAÇÃO DE CRÉDITO) </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -503,7 +518,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="simbens3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PIPELINE NO BITRIX PÓS CONTEMPLAÇÃO
             </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -516,7 +531,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens10">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PROJ - 1087 - ANÁLISE DE CRÉDITO
                 AUTOMÁTICO - MOTOR DE DECISÃO NEUROTECH </p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -529,7 +544,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens11">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CARSYS: IMPLANTAÇÃO </p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -541,7 +556,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens12">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MÉTRICAS CRÉDITO </p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -553,7 +568,7 @@
             <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
         </div>
 
-        <div id="creditobens1">
+        <div class="creditobens1" id="agbens13">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DISPARO DE ALERTA PARA O CLIENTE </p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -568,7 +583,7 @@
 
     <!--Crédito - Imóveis-->
     <div id="show7" class="texto">
-        <div id="creditoimovel1">
+        <div class="creditoimovel1" id="naoimovel1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CONTROLE DE MAPAS (PROCESSOS QUE NÃO
                 FECHAM A FASE DE AGUARDANDO DOCS)</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -581,7 +596,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="creditoimovel1">
+        <div class="creditoimovel1" id="naoimovel2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MIMO PARA O CLIENTE</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -593,7 +608,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="creditoimovel1">
+        <div class="creditoimovel1" id="naoimovel3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PESQUISA DE SATISFAÇÃO</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -605,7 +620,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="creditoimovel1">
+        <div class="creditoimovel1" id="naoimovel4">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">ENTRADA NO RI VIA DIGITAL PARA
                 PROCESSO FÍSICOS</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -618,7 +633,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="creditoimovel1">
+        <div class="creditoimovel1" id="naoimovel5">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">GUIA DE TRANSFERÊNCIA</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -630,7 +645,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="creditoimovel1">
+        <div class="creditoimovel1" id="simimovel1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CONFIRMAÇÃO E COBERTURA DE LANCE -
                 AUTOMATIZADO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -643,7 +658,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="creditoimovel1">
+        <div class="creditoimovel1" id="simimovel2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MÉTRICAS NO SETOR DE IMÓVEL </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -655,7 +670,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="creditoimovel1">
+        <div class="creditoimovel1" id="naoimovel6">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">WORKFLOW - CRÉDITO BENS DIVERSOS </p>
             <p> <b>PRAZO ESTIMADO</b>: T1 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -667,7 +682,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="creditoimovel1">
+        <div class="creditoimovel1" id="naoimovel7">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DEFINIR PILARES DO SETOR - CRÉDITO
                 IMÓVEL </p>
             <p> <b>PRAZO ESTIMADO</b>: AGUARDANDO POSICIONAMENTO </p>
@@ -682,9 +697,9 @@
 
     </div>
 
-    <!--Facilites-->
+    <!--Facilities-->
     <div id="show8" class="texto">
-        <div id="facil1">
+        <div class="facil1" id="naofacil1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PADRONIZAÇÃO DO KIT DE
                 PRIMEIRO-SOCORROS - FILIAIS</p>
             <p> <b>PRAZO ESTIMADO</b>: T1 </p>
@@ -697,7 +712,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="facil1">
+        <div class="facil1" id="simfacil1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">INDICADORES DE PRODUTIVIDADE</p>
             <p> <b>PRAZO ESTIMADO</b>: T4 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -709,7 +724,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="facil1">
+        <div class="facil1" id="naofacil2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PADRONIZAÇÃO DA EFICIÊNCIA ENERGÉTICA
                 E HIDRÁULICA - FILIAIS</p>
             <p> <b>PRAZO ESTIMADO</b>: T4 </p>
@@ -725,7 +740,7 @@
 
     <!--Financeiro-->
     <div id="show9" class="texto">
-        <div id="finan1">
+        <div class="finan1" id="naofinan1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">REESTRUTURAÇÃO DO DEPARTAMENTO
                 FINANCEIRO</p>
             <p> <b>PRAZO ESTIMADO</b>: T1 </p>
@@ -738,7 +753,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="finan1">
+        <div class="finan1" id="naofinan2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">OPERADOR DE CARTÃO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -750,7 +765,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="finan1">
+        <div class="finan1" id="naofinan3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DETALHAMENTO DE PROCESSO PARA RPA</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -762,7 +777,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="finan1">
+        <div class="finan1" id="naofinan4">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">SISTEMA DE CONTROLE DE REEMBOLSO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -774,7 +789,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="finan1">
+        <div class="finan1" id="simfinan1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MELHOR TRATAMENTO PARA OCORRENCIAS NA
                 BAIXA DO RETORNO ELETRÔNICO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -788,9 +803,9 @@
         </div>
     </div>
 
-    <!--jurídico-->
+    <!-- Jurídico -->
     <div id="show10" class="texto">
-        <div id="juri1">
+        <div class="juri1" id="naojuri1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">REVISAR OS TERMOS DE RESPONSABILIDADE
                 DO EMPREGADO E O CONTRATO DE TRABALHO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -803,7 +818,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="naojuri2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PADRONIZAÇÃO E TREINAMENTO PARA
                 ATENDIMENTO DAS RECLAMAÇÕES DOS CONSORCIADOS</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -816,7 +831,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="naojuri3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CRIAR UM PROCEDIMENTO PADRÃO PARA
                 ANÁLISE E TRATATIVA DOS PROCESSOS DE FRAUDE</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -829,7 +844,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="naojuri4">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DEFINIR PROCEDIMENTO DE
                 ACOMPANHAMENTO DOS VALORES DE ESTORNO DOS PARCEIROS E REPRESENTANTES</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -842,7 +857,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="naojuri5">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CRIAR PROCEDIMENTO PARA
                 ACOMPANHAMENTO DOS DISTRATOS (DEVOLUÇÃO INTEGRAL) COM LISTA DE REINCIDENTES PARA MEDIDAS DISCIPLINARES
             </p>
@@ -856,7 +871,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="naojuri6">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">ASSUMIR A GESTÃO E O ACOMPAHAMENTO DE
                 TODOS OS CONTRATOS DAS EMPRESAS DO GRUPO</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -869,7 +884,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="naojuri7">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">REVISÃO DO CÓDIGO DE ÉTICA E CRIAÇÃO
                 DOS CÓDIGOS DE ÉTICA DA FISA LOCADORA E UNIFISA SEGUROS</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -882,7 +897,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="naojuri8">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">IMPLANTAR SISTEMA DE GESTÃO PARA O
                 JURÍDICO PARA MINIMIZAR RISCO E CRIAR INDICADORES</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -895,7 +910,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="simjuri1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">REVISITAR RÉGUA DA COBRANÇA DE
                 CONTEMPLADOS</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -908,7 +923,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="simjuri2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">ESTUDO PARA ABERTURA DE ESCRITÓRIO DE
                 COBRANÇA</p>
             <p> <b>PRAZO ESTIMADO</b>: T4 </p>
@@ -921,7 +936,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="simjuri3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CRIAR RELATÓRIO DE CLASSIFICAÇÃO -
                 CONTAS A RECEBER</p>
             <p> <b>PRAZO ESTIMADO</b>: AGUARDANDO POSICIONAMENTO </p>
@@ -934,7 +949,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="simjuri4">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">ESTUDO DA BASE DE INADIMPLENTES PARA
                 MELHOR DIRECIONAMENTO DO DPTO DE CRÉDITO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -947,7 +962,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="juri1">
+        <div class="juri1" id="simjuri5">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DESENVOLVIMENTO DE INDICADORES PARA O
                 DEPARTAMENTO JURÍDICO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -963,7 +978,7 @@
 
     <!--Monitoria-->
     <div id="show11" class="texto">
-        <div id="monitoria">
+        <div class="monitoria">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> ESTRUTURAÇÃO DE MONITORIA </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -979,7 +994,7 @@
 
     <!--Ouvidoria-->
     <div id="show12" class="texto">
-        <div id="ouv1">
+        <div class="ouv1" id="naoouvi1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> TRANSCRIÇÃO DE ÁUDIO</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -991,7 +1006,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="ouv1">
+        <div class="ouv1" id="simouvi1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAÇÃO DO SETOR DE QUALIDADE</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -1003,7 +1018,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="ouv1">
+        <div class="ouv1" id="simouvi2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> DIVISÃO DE TAREFAS </p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -1019,7 +1034,7 @@
 
     <!--Reativação-->
     <div id="show13" class="texto">
-        <div id="reat1">
+        <div class="reat1" id="simreat1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> MÉTRICAS DE REATIVAÇÃO NO BITRIX</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -1031,7 +1046,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="reat1">
+        <div class="reat1" id="naoreat1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CAMPANHAS ESPECIAIS REATIVAÇÃO </p>
             <p> <b>PRAZO ESTIMADO</b>: T1 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -1043,7 +1058,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="reat1">
+        <div class="reat1" id="naoreat2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> RECUPERAÇÃO DE CLIENTE DESISTENTE
             </p>
             <p> <b>PRAZO ESTIMADO</b>: T1 </p>
@@ -1056,7 +1071,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="reat1">
+        <div class="reat1" id="naoreat3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> REATIVAR NO PRAZO DO GRUPO E NÃO DA
                 COTA</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1069,9 +1084,9 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="reat1">
-            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> COTAS PAGAS E NÃO REATIVADAS NO
-                NEWCON</p>
+        <div class="reat1" id="naoreat4">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> COTAS
+            PAGAS E NÃO REATIVADAS NO NEWCON</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
             <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
@@ -1086,7 +1101,7 @@
 
     <!--Recompra-->
     <div id="show14" class="texto">
-        <div id="rec1">
+        <div class="rec1" id="simrec1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> PONTUAÇÃO DE MONITORIA DO
                 DEPARTAMENTO DE RECOMPRA</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1099,7 +1114,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="rec1">
+        <div class="rec1" id="naorec1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAÇÃO PARA ALTERAÇÃO NAS COTAS DE
                 CÓDIGOS ESPECÍFICOS DE SITUAÇÃO DE COBRANÇA (NEWCON)</p>
             <p> <b>PRAZO ESTIMADO</b>: T1 </p>
@@ -1115,7 +1130,7 @@
 
     <!--Recursos Humanos-->
     <div id="show15" class="texto">
-        <div id="rh1">
+        <div class="rh1" id="naorh1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> AUTOMATIZAR O PROCESSO DE PAGAMENTO
                 DO PRÊMIO DIÁRIO (PRÊMIO POR COTA VENDIDA)</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1128,7 +1143,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> PAGAR A COMISSÃO POR INDICAÇÃO POR
                 MEIO DO NEWCON</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1141,7 +1156,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CÁLCULO E PAGAMENTO DO ICC VIA
                 NEWCON</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1154,7 +1169,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh4">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> INTEGRAR O SISTEMA DE FOLHA COM O
                 FINANCEIRO E A CONTABILIDADE</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1167,7 +1182,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh5">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> MUDAR O FORMATO DE PAGAMENTO DO
                 PRÊMIO DIÁRIO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1180,7 +1195,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh6">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> IMPLANTAR SISTEMÁTICA DE TREINAMENTO
                 DOS ADMS DE UNIDADE</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1193,7 +1208,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh7">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> DEFINIR CALENDÁRIO DE AÇÕES SAZONAIS
                 E CAMPANHAS SOCIAIS (EX: OUTUBRO ROSA, PÁSCOA ETC.)</p>
             <p> <b>PRAZO ESTIMADO</b>: T1 </p>
@@ -1206,7 +1221,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh8">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> AUTOMATIZAR O CADASTRO DE USUÁRIOS
                 NO NEWCON IMPORTANDO INFORMAÇÕES DO RH NYDUS</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1219,7 +1234,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh9">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> IMPLANTAR PROCESSO DE GESTÃO
                 INTELIGENTE DO VALE TRANSPORTE</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1232,7 +1247,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh10">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAR POLÍTICA DE REMUNERAÇÃO E
                 RECONHECIMENTO PARA LÍDERES E COLABORADORES COM MAIOR TEMPO DE CASA VISANDO A FIDELIZAÇÃO</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -1245,7 +1260,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh11">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAR PROGRAMA "MELHORES DO ANO"</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -1257,7 +1272,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh12">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> MELHORAR A GESTÃO DOS REPRESENTANTES
                 E PARCEIROS</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1270,7 +1285,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh13">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAR PROGRAMA DE INCENTIVO AOS
                 ESTUDOS</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1283,7 +1298,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh14">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> REVISÃO DE TODOS OS PARÂMETROS DE
                 COMISSÃO PARA EVENTUAIS CORREÇÕES E CRIAÇÃO DE PADRÕES</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -1296,7 +1311,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh15">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> IMPLANTAR PROCESSO DE AVALIAÇÃO DE
                 DESEMPENHO ESPECIFICO PARA CADA FUNÇÃO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1309,7 +1324,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh16">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAR PROGRAMA DE TREINAMENTO PARA
                 FORMAÇÃO / DESENVOLVIMENTO DE LÍDERES</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1322,7 +1337,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh17">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> DEFINIR TREINAMENTOS PARA TODAS AS
                 EMPRESAS DO GRUPO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1335,7 +1350,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="simrh1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAR E DEFINIR INDICADORES DE RH
                 (KPIS) PARA TODAS AS EMPRESAS DO GRUPO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1348,7 +1363,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh18">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> APRIMORAR A NOSSA PÁGINA DO LINKEDIN
             </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1361,7 +1376,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh19">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAR PLANO DE CARREIRA UNIFISA</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -1373,7 +1388,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="rh1">
+        <div class="rh1" id="naorh20">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAÇÃO DA ÁREA DE SAÚDE E SEGURANÇA
                 DO TRABALHO</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1390,7 +1405,7 @@
     <!--Sucesso do Cliente-->
     <div id="show16" class="texto">
 
-        <div id="suce1">
+        <div class="suce1" id="simsuce1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> DISSEMINAR NA EMPRESA A CULTURA CS -
                 SUCESSO DO CLIENTE</p>
             <p> <b>PRAZO ESTIMADO</b>: T4 </p>
@@ -1403,7 +1418,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="suce1">
+        <div class="suce1" id="naosuce1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAÇÃO DE DOCUMENTOS
                 (TEXTOS/COMUNICAÇÃO) PADRÃO PARA ENVIO PÓS-CONTATO</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -1417,7 +1432,7 @@
         </div>
 
 
-        <div id="suce1">
+        <div class="suce1" id="simsuce2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> MAPEAMENTO DA JORNADA DO CLIENTE</p>
             <p> <b>PRAZO ESTIMADO</b>: T4 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -1429,7 +1444,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="suce1">
+        <div class="suce1" id="simsuce3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> FLUXO BV E CS NO BITRIX</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -1441,7 +1456,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="suce1">
+        <div class="suce1" id="naosuce2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> TRILHA DE APRENDIZAGEM DO
                 COLABORADOR CS</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -1454,7 +1469,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="suce1">
+        <div class="suce1" id="simsuce4">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> ESTRUTURAR COLETA E ANÁLISE DE DADOS
             </p>
             <p> <b>PRAZO ESTIMADO</b>: T4 </p>
@@ -1467,7 +1482,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="suce1">
+        <div class="suce1" id="naosuce3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> TREINAMENTO DE BV PARA O ATENDIMENTO
             </p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -1480,7 +1495,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="suce1">
+        <div class="suce1" id="simsuce5">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAR AÇÕES DE MITIGAÇÃO PARA
                 INDÍCIOS DE CANCELAMENTO</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -1496,7 +1511,7 @@
 
     <!--Tecnologia da Informação-->
     <div id="show17" class="texto">
-        <div id="ti1">
+        <div class="ti1" id="naoti1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> INVENTÁRIO DOS RELATÓRIOS EXISTENTES
                 E INDEXAR</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1509,7 +1524,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="ti1">
+        <div class="ti1" id="simti1">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> TOPOLOGIA DOS SERVIDORES / REDE /
                 LINKS (MATRIZ E UNIDADES)</p>
             <p> <b>PRAZO ESTIMADO</b>: T3 </p>
@@ -1522,7 +1537,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="ti1">
+        <div class="ti1" id="naoti2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> ADEQUAÇÃO E COMPRA DE EQUIPAMENTOS -
                 UNIDADES </p>
             <p> <b>PRAZO ESTIMADO</b>: T1 </p>
@@ -1535,7 +1550,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="ti1">
+        <div class="ti1" id="simti2">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CRIAR SLA + KPI - T.I.</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -1547,7 +1562,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="ti1">
+        <div class="ti1" id="naoti3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> DIMINUIR USO DO "TRANSFER"</p>
             <p> <b>PRAZO ESTIMADO</b>: T4 </p>
             <p> <b>PRAZO ATUAL</b>: T4 </p>
@@ -1559,7 +1574,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="ti1">
+        <div class="ti1" id="simti3">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> REVISAR POLÍTICAS DE ACESSO REMOTO
             </p>
             <p> <b>PRAZO ESTIMADO</b>: T4 </p>
@@ -1572,7 +1587,7 @@
             <p> <b>ESTRATÉGICO</b>: SIM </p>
         </div>
 
-        <div id="ti1">
+        <div class="ti1" id="naoti4">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> MELHORAR A COMUNICAÇÃO ENTRE OS
                 DEPARTAMENTOS RH / TI </p>
             <p> <b>PRAZO ESTIMADO</b>: T1 </p>
@@ -1585,7 +1600,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="ti1">
+        <div class="ti1" id="naoti5">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> DEFINIR DATAS DE ROTINAS DE
                 DEPARTAMENTO T.I.</p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1598,7 +1613,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="ti1">
+        <div class="ti1" id="naoti6">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> MONITORAMENTO EM TEMPO REAL DOS
                 LINKS E SERVIDORES (MATRIZ/UNIDADES) </p>
             <p> <b>PRAZO ESTIMADO</b>: T2 </p>
@@ -1611,7 +1626,7 @@
             <p> <b>ESTRATÉGICO</b>: NÃO </p>
         </div>
 
-        <div id="ti1">
+        <div class="ti1" id="naoti7">
             <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> DESENVOLVIMENTO DE CONTEÚDO PARA
                 DISPONIBILIZAR AOS COLABORADORES </p>
             <p> <b>PRAZO ESTIMADO</b>: T4 </p>
@@ -1626,13 +1641,903 @@
     </div>
 
     <script>
-        $(document).ready(function () {
-            $('#myselection').on('change', function () {
-                var demovalue = $(this).val();
-                $("div.texto").hide();
-                $("#show" + demovalue).show();
-            });
-        });
+
+        function mudar() {
+            var ddl = document.getElementById("myselection")
+            var selectedValue = ddl.options[ddl.selectedIndex].value;
+            var ddl1 = document.getElementById("myselection2")
+            var selectedValue2 = ddl1.options[ddl1.selectedIndex].value;
+            
+            /* ADM DE GRUPOS*/
+            if (selectedValue == "1") {
+                $('.adm1').show();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    $('#simadm').show();
+                    $('#naoadm1').hide();
+                    $('#naoadm2').hide();
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#naoadm1').show();
+                    $('#naoadm2').show();
+                    $('#simadm').hide();
+                }
+                else if(selectedValue2 =2) {
+                    $('#simadm').hide();
+                    $('#naoadm1').hide();
+                    $('#naoadm2').hide();
+                }
+            }
+
+            /* Atendimento ao Cliente */
+            else if (selectedValue == 2) {
+                $('.adm1').hide();
+                $('.atd1').show();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    $('#simatd1').show();
+                    $('#simatd2').show();
+                    $('#naoatd1').hide();
+                    $('#naoatd2').hide();
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#naoatd1').show();
+                    $('#naoatd2').show();
+                    $('#simatd1').hide();
+                    $('#simatd2').hide();
+                }
+                else if (selectedValue2 == 20) {
+                    $('#simatd1').hide();
+                    $('#simatd2').hide();
+                    $('#naoatd1').hide();
+                    $('#naoatd2').hide();
+                }
+            }
+            /* Cobrança */
+            else if (selectedValue == 3) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').show();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    $('#simcbr1').show();
+                    $('#simcbr2').show();
+                    $('#naocbr1').hide();
+                    $('#naocbr2').hide();
+                    $('#naocbr3').hide();
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#naocbr1').show();
+                    $('#naocbr2').show();
+                    $('#naocbr3').show();
+                    $('#simcbr1').hide();
+                    $('#simcbr2').hide();
+                }
+                else if (selectedValue2== 20) {
+                    $('#simcbr1').hide();
+                    $('#simcbr2').hide();
+                    $('#naocbr1').hide();
+                    $('#naocbr2').hide();
+                    $('#naocbr3').hide();
+                }
+            }
+            /* Contabilidade */
+            else if (selectedValue == 4) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').show();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    naoconta5
+                    $('#naoconta1').hide();
+                    $('#naoconta2').hide();
+                    $('#naoconta3').hide();
+                    $('#naoconta4').hide();
+                    $('#naoconta5').hide();
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#naoconta1').show();
+                    $('#naoconta2').show();
+                    $('#naoconta3').show();
+                    $('#naoconta4').show();
+                    $('#naoconta5').show();
+                }
+                else if (selectedValue2 == 20) {
+                    $('#naoconta1').hide();
+                    $('#naoconta2').hide();
+                    $('#naoconta3').hide();
+                    $('#naoconta4').hide();
+                    $('#naoconta5').hide();
+                }
+
+            }
+
+            else if (selectedValue == 5) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').show();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    $('#simcontrol1').show();
+                    $('#simcontrol2').show();
+                    $('#naocontrol1').hide();
+                    $('#naocontrol2').hide();
+                    $('#naocontrol3').hide();
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#naocontrol1').show();
+                    $('#naocontrol2').show();
+                    $('#naocontrol3').show();
+                    $('#simcontrol1').hide();
+                    $('#simcontrol2').hide();
+                }
+                else if (selectedValue2 == 20) {
+                    $('#simcontrol1').hide();
+                    $('#simcontrol2').hide();
+                    $('#naocontrol1').hide();
+                    $('#naocontrol2').hide();
+                    $('#naocontrol3').hide();
+                }
+            }
+
+            else if (selectedValue == 6) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').show();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    $('#simbens1').show();
+                    $('#simbens2').show();
+                    $('#simbens3').show();
+                    $('#naobens1').hide();
+                    $('#agbens1').hide();
+                    $('#agbens2').hide();
+                    $('#agbens3').hide();
+                    $('#agbens4').hide();
+                    $('#agbens5').hide();
+                    $('#agbens6').hide();
+                    $('#agbens7').hide();
+                    $('#agbens8').hide();
+                    $('#agbens9').hide();
+                    $('#agbens10').hide();
+                    $('#agbens11').hide();
+                    $('#agbens12').hide();
+                    $('#agbens13').hide();
+
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#naobens1').show();
+                    $('#simbens1').hide();
+                    $('#simbens2').hide();
+                    $('#simbens3').hide();
+                    $('#agbens1').hide();
+                    $('#agbens2').hide();
+                    $('#agbens3').hide();
+                    $('#agbens4').hide();
+                    $('#agbens5').hide();
+                    $('#agbens6').hide();
+                    $('#agbens7').hide();
+                    $('#agbens8').hide();
+                    $('#agbens9').hide();
+                    $('#agbens10').hide();
+                    $('#agbens11').hide();
+                    $('#agbens12').hide();
+                    $('#agbens13').hide();
+
+                }
+
+                else if (selectedValue2 == 20) {
+                    $('#agbens1').show();
+                    $('#agbens2').show();
+                    $('#agbens3').show();
+                    $('#agbens4').show();
+                    $('#agbens5').show();
+                    $('#agbens6').show();
+                    $('#agbens7').show();
+                    $('#agbens8').show();
+                    $('#agbens9').show();
+                    $('#agbens10').show();
+                    $('#agbens11').show();
+                    $('#agbens12').show();
+                    $('#agbens13').show();
+                    $('#naobens1').hide();
+                    $('#simbens1').hide();
+                    $('#simbens2').hide();
+                    $('#simbens3').hide();
+                }
+            }
+
+            /* Crédito Imóveis */
+            else if (selectedValue == 7) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').show();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    $('#simimovel1').show();
+                    $('#simimovel2').show();
+                    $('#naoimovel1').hide();
+                    $('#naoimovel2').hide();
+                    $('#naoimovel3').hide();
+                    $('#naoimovel4').hide();
+                    $('#naoimovel5').hide();
+                    $('#naoimovel6').hide();
+                    $('#naoimovel7').hide();
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#naoimovel1').show();
+                    $('#naoimovel2').show();
+                    $('#naoimovel3').show();
+                    $('#naoimovel4').show();
+                    $('#naoimovel5').show();
+                    $('#naoimovel6').show();
+                    $('#naoimovel7').show();
+                    $('#simimovel1').hide();
+                    $('#simimovel2').hide();
+
+                }
+
+                else if (selectedValue2 == 20) {
+
+                    $('#simimovel1').hide();
+                    $('#simimovel2').hide();
+                    $('#naoimovel1').hide();
+                    $('#naoimovel2').hide();
+                    $('#naoimovel3').hide();
+                    $('#naoimovel4').hide();
+                    $('#naoimovel5').hide();
+                    $('#naoimovel6').hide();
+                    $('#naoimovel7').hide();
+
+                }
+
+            }
+
+            /* Facilities */
+
+            else if (selectedValue == 8) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').show();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    $('#simfacil1').show();
+                    $('#naofacil1').hide();
+                    $('#naofacil2').hide();
+
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#naofacil1').show();
+                    $('#naofacil2').show();
+                    $('#simfacil1').hide();
+
+                }
+
+                else if (selectedValue2 == 20) {
+                    $('#naofacil1').hide();
+                    $('#naofacil2').hide();
+                    $('#simfacil1').hide();
+                }
+            }
+
+            /* Financeiro */
+
+            else if (selectedValue == 9) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').show();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    $('#simfinan1').show();
+                    $('#naofinan1').hide();
+                    $('#naofinan2').hide();
+                    $('#naofinan3').hide();
+                    $('#naofinan4').hide();
+
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#simfinan1').hide();
+                    $('#naofinan1').show();
+                    $('#naofinan2').show();
+                    $('#naofinan3').show();
+                    $('#naofinan4').show();
+
+                }
+
+                else if (selectedValue2 == 20) {
+                    $('#simfinan1').hide();
+                    $('#naofinan1').hide();
+                    $('#naofinan2').hide();
+                    $('#naofinan3').hide();
+                    $('#naofinan4').hide();
+
+                }
+            }
+            /* Jurídico */
+            else if (selectedValue == 10) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').show();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    $('#simjuri1').show();
+                    $('#simjuri2').show();
+                    $('#simjuri3').show();
+                    $('#simjuri4').show();
+                    $('#simjuri5').show();
+                    $('#naojuri1').hide();
+                    $('#naojuri2').hide();
+                    $('#naojuri3').hide();
+                    $('#naojuri4').hide();
+                    $('#naojuri5').hide();
+                    $('#naojuri6').hide();
+                    $('#naojuri7').hide();
+                    $('#naojuri8').hide();
+
+                    
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#naojuri1').show();
+                    $('#naojuri2').show();
+                    $('#naojuri3').show();
+                    $('#naojuri4').show();
+                    $('#naojuri5').show();
+                    $('#naojuri7').show();
+                    $('#naojuri8').show();
+                    $('#simjuri1').hide();
+                    $('#simjuri2').hide();
+                    $('#simjuri3').hide();
+                    $('#simjuri4').hide();
+                    $('#simjuri5').hide();
+                }
+
+                else if (selectedValue2 == 20) {
+                    $('#simjuri1').hide();
+                    $('#simjuri2').hide();
+                    $('#simjuri3').hide();
+                    $('#simjuri4').hide();
+                    $('#simjuri5').hide();
+                    $('#naojuri1').hide();
+                    $('#naojuri2').hide();
+                    $('#naojuri3').hide();
+                    $('#naojuri4').hide();
+                    $('#naojuri5').hide();
+                    $('#naojuri6').hide();
+                    $('#naojuri7').hide();
+                    $('#naojuri8').hide();
+                }
+
+            }
+
+            /* Ouvidoria */
+
+            else if (selectedValue == 12) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').show();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    $('#simouvi1').show();
+                    $('#simouvi2').show();
+                    $('#naoouvi1').hide();
+
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#simouvi1').hide();
+                    $('#simouvi2').hide();
+                    $('#naoouvi').show();
+
+                }
+                else if (selectedValue2 == 20) {
+                    $('#simouvi1').hide();
+                    $('#simouvi2').hide();
+                    $('#naoouvi1').hide();
+
+                }
+
+            }
+
+        /* Reativação */
+
+        else if (selectedValue == 13) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').show();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+                
+                if (selectedValue2 == 18) {
+                    $('#simreat1').show();
+                    $('#naoreat1').hide();
+                    $('#naoreat2').hide();
+                    $('#naoreat3').hide();
+                    $('#naoreat4').hide();            
+
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#simreat1').hide();
+                    $('#naoreat1').show();
+                    $('#naoreat2').show();
+                    $('#naoreat3').show();
+                    $('#naoreat4').show();
+                                        
+                }
+                
+                else if (selectedValue2 == 20) {
+                    $('#simreat1').hide();
+                    $('#naoreat1').hide();
+                    $('#naoreat2').hide();
+                    $('#naoreat3').hide();
+                    $('#naoreat4').hide();            
+
+                }               
+        
+            }
+
+        /* Recompra */
+
+
+        else if (selectedValue == 14) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').show();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18) {
+                    $('#simrec1').show();
+                    $('#naorec1').hide();
+                    
+                }
+
+                else if (selectedValue2 == 19) {
+                    $('#simrec1').hide();
+                    $('#naorec1').show();
+                    
+                }
+
+                else if (selectedValue2 == 20) {
+                    $('#simrec1').hide();
+                    $('#naorec1').hide();
+
+                }
+
+        }
+
+
+        /* Recursos Humanos */
+
+        else if (selectedValue == 15) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').show();
+                $('.suce1').hide();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18){
+                    $('#simrh1').show();
+                    $('#naorh1').hide();
+                    $('#naorh2').hide();
+                    $('#naorh3').hide();
+                    $('#naorh4').hide();
+                    $('#naorh5').hide();
+                    $('#naorh6').hide();
+                    $('#naorh7').hide();
+                    $('#naorh8').hide();
+                    $('#naorh9').hide();
+                    $('#naorh10').hide();
+                    $('#naorh11').hide();
+                    $('#naorh12').hide();
+                    $('#naorh13').hide();
+                    $('#naorh14').hide();
+                    $('#naorh15').hide();
+                    $('#naorh16').hide();
+                    $('#naorh17').hide();
+                    $('#naorh18').hide();
+                    $('#naorh19').hide();
+                    $('#naorh20').hide();
+                }
+
+                else if (selectedValue2 == 19){
+                    $('#naorh1').show();
+                    $('#naorh2').show();
+                    $('#naorh3').show();
+                    $('#naorh4').show();
+                    $('#naorh5').show();
+                    $('#naorh6').show();
+                    $('#naorh7').show();
+                    $('#naorh8').show();
+                    $('#naorh9').show();
+                    $('#naorh10').show();
+                    $('#naorh11').show();
+                    $('#naorh12').show();
+                    $('#naorh13').show();
+                    $('#naorh14').show();
+                    $('#naorh15').show();
+                    $('#naorh16').show();
+                    $('#naorh17').show();
+                    $('#naorh18').show();
+                    $('#naorh19').show();
+                    $('#naorh20').show();
+                    $('#simrh1').hide();
+                }
+
+                else if (selectedValue2 == 20) {
+                    $('#simrh1').hide();
+                    $('#naorh1').hide();
+                    $('#naorh2').hide();
+                    $('#naorh3').hide();
+                    $('#naorh4').hide();
+                    $('#naorh5').hide();
+                    $('#naorh6').hide();
+                    $('#naorh7').hide();
+                    $('#naorh8').hide();
+                    $('#naorh9').hide();
+                    $('#naorh10').hide();
+                    $('#naorh11').hide();
+                    $('#naorh12').hide();
+                    $('#naorh13').hide();
+                    $('#naorh14').hide();
+                    $('#naorh15').hide();
+                    $('#naorh16').hide();
+                    $('#naorh17').hide();
+                    $('#naorh18').hide();
+                    $('#naorh19').hide();
+                    $('#naorh20').hide();
+                }
+
+    }
+        /* Sucesso do Cliente */
+
+        else if (selectedValue == 16) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').show();
+                $('.ti1').hide();
+
+                if (selectedValue2 == 18){
+                    $('#simsuce1').show();
+                    $('#simsuce2').show();
+                    $('#simsuce3').show();
+                    $('#simsuce4').show();
+                    $('#simsuce5').show();
+                    $('#naosuce1').hide();
+                    $('#naosuce2').hide();
+                    $('#naosuce3').hide();
+                    
+                }
+
+                else if(selectedValue2 == 19){
+                    $('#simsuce1').hide();
+                    $('#simsuce2').hide();
+                    $('#simsuce3').hide();
+                    $('#simsuce4').hide();
+                    $('#simsuce5').hide();
+                    $('#naosuce1').show();
+                    $('#naosuce2').show();
+                    $('#naosuce3').show();
+                    
+                }
+
+                else if (selectedValue2 == 20){
+                    $('#simsuce1').hide();
+                    $('#simsuce2').hide();
+                    $('#simsuce3').hide();
+                    $('#simsuce4').hide();
+                    $('#simsuce5').hide();
+                    $('#naosuce1').hide();
+                    $('#naosuce2').hide();
+                    $('#naosuce3').hide();
+                }
+    }
+
+            /* Tecnologia */
+
+        else if (selectedValue == 17) {
+                $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').show();
+
+                if (selectedValue2 == 18) {
+                    $('#simti1').show();
+                    $('#simti2').show();
+                    $('#simti3').show();
+                    $('#naoti1').hide();
+                    $('#naoti2').hide();
+                    $('#naoti3').hide();
+                    $('#naoti4').hide();
+                    $('#naoti5').hide();
+                    $('#naoti6').hide();
+                    $('#naoti7').hide();           
+
+                }
+                
+                else if (selectedValue2 == 19) {
+                    $('#simti1').hide();
+                    $('#simti2').hide();
+                    $('#simti3').hide();
+                    $('#naoti1').show();
+                    $('#naoti2').show();
+                    $('#naoti3').show();
+                    $('#naoti4').show();
+                    $('#naoti5').show();
+                    $('#naoti6').show();
+                    $('#naoti7').show();
+
+                }
+
+                else if (selectedValue2 == 20) {
+                    $('#simti1').hide();
+                    $('#simti2').hide();
+                    $('#simti3').hide();
+                    $('#naoti1').hide();
+                    $('#naoti2').hide();
+                    $('#naoti3').hide();
+                    $('#naoti4').hide();
+                    $('#naoti5').hide();
+                    $('#naoti6').hide();
+                    $('#naoti7').hide(); 
+
+                }   
+        
+    }
+       
+        else if (selectedValue==0) {
+            $('.adm1').hide();
+                $('.atd1').hide();
+                $('.cbr1').hide();
+                $('.conta1').hide();
+                $('.control1').hide();
+                $('.creditobens1').hide();
+                $('.creditoimovel1').hide();
+                $('.facil1').hide();
+                $('.finan1').hide();
+                $('.juri1').hide();
+                $('.monitoria').hide();
+                $('.ouv1').hide();
+                $('.reat1').hide();
+                $('.rec1').hide();
+                $('.rh1').hide();
+                $('.suce1').hide();
+                $('.ti1').hide();
+        }
+
+}
+
     </script>
+
 </body>
+
 </html>
