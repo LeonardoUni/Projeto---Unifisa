@@ -33,6 +33,19 @@
      
 }
 
+.departamentos {
+    padding-top: 15px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+
+
+.estrategico {
+    padding-top: 15px;
+    font-size: 24px;
+    font-weight: bolder;
+}
 
 select {
     width: 300px;
@@ -63,7 +76,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 1 - Administração de Grupos ------------------------------------------------------------------*/
 
-.texto #adm1 {
+.adm1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -78,7 +91,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #adm1:hover {
+.adm1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -89,7 +102,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 2 - Atendimento ao Cliente ------------------------------------------*/
 
-.texto #atd1 {
+.texto .atd1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -104,7 +117,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #atd1:hover {
+.texto .atd1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -115,7 +128,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 03 - Cobrança ------------------------------------------*/
 
-.texto #cbr1 {
+.texto .cbr1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -130,7 +143,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #cbr1:hover {
+.texto .cbr1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -141,7 +154,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 04 - Contabilidade -----------------------------------------------------*/
 
-.texto #conta1 {
+.texto .conta1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -156,7 +169,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #conta1:hover {
+.texto .conta1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -167,7 +180,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 05 - Controladoria -----------------------------------------------------*/
 
-.texto #control1 {
+.texto .control1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -182,7 +195,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #control1:hover {
+.texto .control1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -193,7 +206,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 06 - Crédito Bens-Móveis e Serviços --------------------------------------*/
 
-.texto #creditobens1 {
+.texto .creditobens1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -208,7 +221,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #creditobens1:hover {
+.texto .creditobens1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -219,7 +232,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 07 - Crédito - Imóveis ------------------------------------------*/
 
-.texto #creditoimovel1 {
+.texto .creditoimovel1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -234,7 +247,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #creditoimovel1:hover {
+.texto .creditoimovel1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -245,7 +258,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 08 - Facilities ------------------------------------------*/
 
-.texto #facil1 {
+.texto .facil1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -260,7 +273,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #facil1:hover {
+.texto .facil1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -271,7 +284,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 09 - Financeiro ------------------------------------------*/
 
-.texto #finan1 {
+.texto .finan1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -286,7 +299,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #finan1:hover {
+.texto .finan1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -297,7 +310,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 10 - Jurídico ------------------------------------------*/
 
-.texto #juri1 {
+.texto .juri1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -312,7 +325,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #juri1:hover {
+.texto .juri1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -323,7 +336,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 11 - Monitoria e Treinamento ------------------------------------------*/
 
-.texto #monitoria {
+.texto .monitoria {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -338,7 +351,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #monitoria:hover {
+.texto .monitoria:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -349,7 +362,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 12 - Ouvidoria ------------------------------------------*/
 
-.texto #ouv1 {
+.texto .ouv1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -364,7 +377,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #ouv1:hover {
+.texto .ouv1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -375,7 +388,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 13 - Reativação ------------------------------------*/
 
-.texto #reat1 {
+.texto .reat1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -390,7 +403,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #reat1:hover {
+.texto .reat1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -401,7 +414,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 14 - Recompra ------------------------------------*/
 
-.texto #rec1 {
+.texto .rec1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -416,7 +429,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #rec1:hover {
+.texto .rec1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -427,7 +440,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 15 - Recursos Humanos ------------------------------------*/
 
-.texto #rh1 {
+.texto .rh1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -442,7 +455,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #rh1:hover {
+.texto .rh1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -453,7 +466,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 16 - Sucesso do Cliente ------------------------------------*/
 
-.texto #suce1 {
+.texto .suce1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -468,7 +481,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #suce1:hover {
+.texto .suce1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
@@ -479,7 +492,7 @@ select:-ms-expand {
 
 /* ----------------------- Tarefa 17 - Tecnologia da Informação ------------------------------------*/
 
-.texto #ti1 {
+.texto .ti1 {
     float: left;
     padding: 10px;
     margin-top: 20px;
@@ -494,7 +507,7 @@ select:-ms-expand {
     color: white;
 }
 
-.texto #ti1:hover {
+.texto .ti1:hover {
     background-color: white;
     color: rgb(255, 255, 255);
     box-shadow: 2px 10px 15px black;
